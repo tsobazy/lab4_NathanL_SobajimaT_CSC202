@@ -13,9 +13,6 @@ class BTNode:
     left : BinTree
     right : BinTree
 
-def comes_before_function(a : Any, b : Any) -> bool:
-    return a < b
-
 @dataclass(frozen=True)
 class BST:
     comes_before : Callable[[Any, Any], bool]
