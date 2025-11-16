@@ -2,6 +2,7 @@ import sys
 import unittest
 from typing import *
 from dataclasses import dataclass
+import math
 sys.setrecursionlimit(10**6) 
 
 # 2.1
@@ -17,7 +18,6 @@ class BTNode:
 class BST:
     comes_before : Callable[[Any, Any], bool]
     BT : BinTree 
-
 
 # finds whether a binary search tree is empty (True means empty)
 def is_empty(t : BST) -> bool:
